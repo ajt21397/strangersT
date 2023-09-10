@@ -9,4 +9,3 @@ function postMatches(post, text) {
 const filteredPosts = posts.filter((post) => postMatches(post, searchTerm));
 const postsToDisplay = searchTerm.length ? filteredPosts : posts;
 
-// then, in our jsx below... map over postsToDisplay instead of posts

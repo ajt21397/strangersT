@@ -12,11 +12,13 @@
   align-items: center;
   min-height: 80vh;
   width: 100%;
+  background-image: url('https://cdn.shopify.com/s/files/1/0070/7032/files/online-selling-sites.jpg?v=1612464609://img.freepik.com/premium-vector/shopping-cart-vector-icon-ecommerce-online-shopping-symbol-web-design-flat-design-min_883219-405.jpg');
 }
 
 .home h1 {
   font-size: 4rem;
   margin-top: 10px;
+  color: rgb(237, 217, 107);
 }
 
 .home p {
@@ -40,7 +42,7 @@
 
 .allPosts ul {
   margin-top: 30px;
-  background-color: rgb(245, 246, 252);
+  background-color: rgb(200, 239, 26);
   padding: 10px;
   border-radius: 10px;
   padding: 50px;
@@ -52,7 +54,7 @@
   text-transform: uppercase;
   padding: 2px;
   filter: drop-shadow(1px 2px 1px rgb(0, 0, 0));
-  background-color: #811c3a;
+  background-color: #389822;
 }
 
 /* REGISTER/LOGIN */
@@ -131,7 +133,7 @@
 .registerForm button:hover,
 .loginForm button:hover,
 .submitPost button:hover {
-  background-color: rgb(63, 91, 130);
+  background-color: rgb(180, 193, 211);
 }
 
 .registerForm p,
@@ -205,7 +207,7 @@
 
 .delete-btn {
   border: none;
-  background-color: rgb(250, 118, 81);
+  background-color: rgb(103, 37, 219);
   padding: 10px;
   margin-top: 10px;
   border-radius: 10px;

@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+//A search bar to search for the posts that you want to look for
 export default function Searchbar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
 

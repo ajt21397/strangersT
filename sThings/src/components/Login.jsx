@@ -18,12 +18,12 @@ export default function Login() {
 
     if (response.success) {
       localStorage.setItem("token", response.data.token);
-      //toast.success("Welcome back!");
+     
 
       handleAuthChange(true, response.data.user);
       navigate("/posts");
     } else {
-      //toast.error("Please try again");
+      
       handleAuthChange(false);
     }
   };
