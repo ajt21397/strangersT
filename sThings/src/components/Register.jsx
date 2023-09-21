@@ -15,7 +15,7 @@ export default function Register() {
   } = useForm();
 
   // Navigate to post if login is successful
-  const notify = () => toast("Thanks for registering!");
+
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
@@ -86,7 +86,7 @@ export default function Register() {
       getValues("confirmpassword") ? (
         <p>Password must match</p>
       ) : null}
-      <button onClick={notify}>Register</button>
+      <button>Register</button>
       <a className="login-register" href="/account/login">
         Already have an account? Log In
       </a>

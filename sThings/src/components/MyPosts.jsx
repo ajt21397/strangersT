@@ -22,9 +22,12 @@ const MyPosts = () => {
                     },
                 });
                 const result = await response.json();
-                // Filter posts to include only those authored by the active user
-                const userPosts = result.data.posts.filter(post => post.author._id === user._id);
-                setPosts(userPosts);
+                if (user && user._id) { // Check if user exists and has _id property
+                    const userPosts = result.data.posts.filter(post => post.author._id === user._id);
+                    setPosts(userPosts);
+                } else {
+                    console.error("User object is missing _id property.");
+                }
             } catch (error) {
                 console.error(error);
             }
